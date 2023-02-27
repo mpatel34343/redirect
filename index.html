@@ -18,7 +18,7 @@
 		us to another page -->
 	<script>
 		// click event on button
-		$("button").click(function(){
+		(function(){
 			$(".redirect").text("Redirecting....")
 			// storing url and time
 			let delay = 5000;
@@ -26,7 +26,7 @@
 			setTimeout(function(){
 				location = url;
 			},5000)
-		})
+		})();
 	</script>
 </body>
 </html>
